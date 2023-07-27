@@ -1,13 +1,14 @@
 // Sample data for the 16-person tournament bracket
 const tournamentData = [
-    { match: "Match 1", teamA: "Team A1", teamB: "Team A2", winner: "Team A1" },
-    // Add the remaining matches here
+    { round: 1, match: 1, teamA: "Person 1", teamB: "Person 2", winner: "Person 1" },
+    // Add the remaining matches for Round 1 here
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
     const tournamentBracket = document.querySelector(".tournament-bracket");
 
     tournamentData.forEach((matchData) => {
+        const roundDiv = tournamentBracket.querySelector(`.round:nth-child(${matchData.round})`);
         const matchDiv = document.createElement("div");
         matchDiv.classList.add("match");
 
@@ -27,6 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         matchDiv.appendChild(teamADiv);
         matchDiv.appendChild(teamBDiv);
-        tournamentBracket.appendChild(matchDiv);
+        roundDiv.appendChild(matchDiv);
     });
 });
