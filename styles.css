@@ -1,9 +1,3 @@
-font-size: 16px;
-match-height: 62px;
-match-spacing: 24px;
-match-width: 240px;
-border-size: 1px;
-border-radius: 2px;
 
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
@@ -94,18 +88,6 @@ body { font-family: 'source sans pro', sans-serif; height: 100%; width: 100%; }
 .column:nth-child(4) { .match-lines .line.two {	height: (match-height + match-spacing) * 3 + border-size * 4; } }
 .column:nth-child(5) { .match-lines .line.two {	height: (match-height + match-spacing) * 4 + border-size * 5; } }
 
-
-light-background: #f9fafd;
-light-border-main: #dadfe3;
-light-border-alt: #dadfe3; 
-light-winning-team-background: #fff;
-light-losing-team-background: #fff;
-light-winning-team-color: #272f36;
-light-losing-team-color: #708392; 
-light-line-color-override: null; 
-light-seed-color-override: #9fafbf; 
-light-score-color-override: #9fafbf; 
-
 .theme-light {
 	background: light-background;
 	border-color: darken(light-background,5%); 
@@ -139,17 +121,6 @@ light-score-color-override: #9fafbf;
 	}
 }
 
-dark-background: #0e1217;
-dark-border-main: #36404e;
-dark-border-alt: #232c36; 
-dark-winning-team-background: #232c36;
-dark-losing-team-background: #182026;
-dark-winning-team-color: #e3e8ef;
-dark-losing-team-color: #6b798c;
-dark-line-color-override: null; 
-dark-seed-color-override: null; 
-dark-score-color-override: null; 
-dark-score-winner-color-override: #03d9ce;
 
 .theme-dark {
 	
